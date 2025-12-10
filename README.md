@@ -154,7 +154,7 @@ Este proyecto está bajo la Licencia MIT.
 
 ## 👤 Autor
 
-Tu Nombre - [@tu_usuario](https://github.com/tu_usuario)
+Angel Sandoval - [@magexd](https://github.com/magexd)
 
 ---
 
