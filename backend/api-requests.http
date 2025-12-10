@@ -1,0 +1,61 @@
+### Variables
+@baseUrl = http://localhost:3000
+
+### Crear Ingreso - Salario
+POST {{baseUrl}}/transactions
+Content-Type: application/json
+
+{
+  "concept": "Salario Diciembre",
+  "amount": 2000,
+  "category": "Ingreso"
+}
+
+### Crear Ingreso - Freelance
+POST {{baseUrl}}/transactions
+Content-Type: application/json
+
+{
+  "concept": "Proyecto Freelance",
+  "amount": 500,
+  "category": "Trabajo Extra"
+}
+
+### Crear Gasto - Supermercado
+POST {{baseUrl}}/transactions
+Content-Type: application/json
+
+{
+  "concept": "Supermercado",
+  "amount": -120.50,
+  "category": "Alimentación"
+}
+
+### Crear Gasto - Netflix
+POST {{baseUrl}}/transactions
+Content-Type: application/json
+
+{
+  "concept": "Netflix",
+  "amount": -15.99,
+  "category": "Entretenimiento"
+}
+
+### Crear Gasto - Gasolina
+POST {{baseUrl}}/transactions
+Content-Type: application/json
+
+{
+  "concept": "Gasolina",
+  "amount": -45,
+  "category": "Transporte"
+}
+
+### Listar Todas las Transacciones
+GET {{baseUrl}}/transactions
+
+### Ver Balance
+GET {{baseUrl}}/transactions/balance
+
+### Health Check
+GET {{baseUrl}}
