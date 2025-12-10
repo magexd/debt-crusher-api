@@ -37,12 +37,14 @@ npm install
 
 2. **Configura las variables de entorno:**
    - Copia el archivo de ejemplo: `cp .env.example .env`
-   - Edita `backend/.env` y agrega tu connection string:
+   - Edita `backend/.env` y agrega tu connection string de MongoDB Atlas:
 
 ```env
-MONGODB_URI=mongodb+srv://usuario:password@cluster0.xxxxx.mongodb.net/debt-crusher?retryWrites=true&w=majority
+MONGODB_URI=your-mongodb-atlas-connection-string-here
 PORT=3000
 ```
+
+> ⚠️ **Importante:** Nunca compartas tu connection string real. Mantén tu archivo `.env` seguro y privado.
 
 ## 🏃 Ejecutar
 
