@@ -20,7 +20,7 @@ API REST para gestión de transacciones financieras (ingresos y gastos) construi
 
 ```bash
 # Clonar repositorio
-git clone https://github.com/TU-USUARIO/debt-crusher-api.git
+git clone https://github.com/magexd/debt-crusher-api.git
 cd debt-crusher-api
 
 # Instalar dependencias
@@ -35,12 +35,13 @@ npm install
    - Crea un cluster gratuito (M0)
    - Obtén tu connection string
 
-2. **Configura la conexión:**
-   - Edita `backend/src/app.module.ts`
-   - Reemplaza la URL de MongoDB con tu connection string
+2. **Configura las variables de entorno:**
+   - Copia el archivo de ejemplo: `cp .env.example .env`
+   - Edita `backend/.env` y agrega tu connection string:
 
-```typescript
-MongooseModule.forRoot('tu-connection-string-aqui')
+```env
+MONGODB_URI=mongodb+srv://usuario:password@cluster0.xxxxx.mongodb.net/debt-crusher?retryWrites=true&w=majority
+PORT=3000
 ```
 
 ## 🏃 Ejecutar
